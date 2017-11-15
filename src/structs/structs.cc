@@ -58,21 +58,21 @@ void print_vec(const Vec2 &wr)
 
 //TODO : Implement overloaded + operators
 
-Vec2 operator+(const Vec2 &wr, const Vec2 &wr){
+Vec2 operator+(const Vec2 &wr, const Vec2 &yr){
     Vec2 temp = Vec2();
-    temp.x =  wr.x + wr.x;
-    temp.y =  wr.y + wr.y;
-    return temp
+    temp.x =  wr.x + yr.x;
+    temp.y =  wr.y + yr.y;
+    return temp;
 }
 
 
 
-Vec3 operator+(const Vec3 &wr, const Vec3 &wr){
-    Vec3 temp = Vec3()
-    temp.x =  Vec3 v.x + Vec3 v.x;
-    temp.y=   Vec3 v.y + Vec3 v.y;
-    temp.z=   Vec3 v.z + Vec3 v.z;   
-    return temp
+Vec3 operator+(const Vec3 v, const Vec3 y){
+    Vec3 temp = Vec3();
+    temp.x =  v.x +  y.x;
+    temp.y=    v.y +  y.y;
+    temp.z=    v.z +  y.z;
+    return temp;
 
 }
 
