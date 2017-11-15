@@ -77,8 +77,8 @@ SValue Stack::pop()
     {
         // TODO: Fix this by throwing an exception properly
         // https://www.tutorialspoint.com/cplusplus/cpp_exceptions_handling.htm
-        throw "Trying to pop from an empty Stack";
-        return -1;
+        throw "Can not pop an empty stack!";
+        //return -1;
     }
 
     SValue val = this->head->data;
@@ -97,19 +97,27 @@ bool Stack::empty() const {
     {
         return true;
     }
-    return false;
+    else
+    {
+       return false; 
+    }
+    
 
 }
 
 // TODO: Implementation of print method
-void Stack::print()
+void Stack::print() const{
     Node* tmp = this->head.get();
     while(tmp != nullptr){
         SValue val = tmp->data;
-        tmp = tmp->head.get();
+        tmp = tmp->next.get();
         cout << val << endl;
     }
 
     // We move the unique pointer of the old next to become the new head
 
+}
+
+void print(SValue val){
+    cout << val << endl;
 }
