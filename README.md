@@ -50,9 +50,7 @@ Complete the following exercises, saving your solutions in the indicated files.
 
 ## Assessment
 
-Analyze in this section what you found useful about this assignment in your own words. Include any lingering questions or comments that you may have.
-
-**We learned valuable information about structs, stacks, and strings in C++. We noticed differences between C and C++ which were interesting. **
+We learned valuable information about structs, stacks, and strings in C++. We noticed differences between C and C++ which were interesting. 
 
 ## Honor Pledge
 
